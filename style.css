@@ -1,0 +1,278 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #2563eb, #60a5fa);
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+/* FORM */
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 380px;
+    background: white;
+    padding:5px 110px 20px 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* BUTTON LINK */
+.btn-view {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #10b981;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.btn-view:hover {
+    background: #059669;
+}
+
+/* ADMIN */
+.container {
+    width: 90%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* TABLE */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+    background: #eef4ff;
+}
+
+/* STATUS */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.badge.Menunggu { background: orange; }
+.badge.Proses { background: blue; }
+.badge.Selesai { background: green; }
+
+/* BUTTON */
+.btn-back {
+    background: #2c3e50;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.btn-edit {
+    background: #2980b9;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* ROW CLICK */
+.klik-row {
+    cursor: pointer;
+}
+
+/* FILTER */
+.filter-box {
+    margin-bottom: 15px;
+}
+/* === FILTER RAPI === */
+.filter-box {
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-group input {
+    width: 180px;
+}
+
+/* tombol kecil */
+.btn-filter {
+    background: #2563eb;
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto; /* penting biar ga panjang */
+}
+
+.btn-filter:hover {
+    background: #1d4ed8;
+}
+
+.btn-reset {
+    background: #6b7280;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+}
+
+.btn-today {
+    background: #10b981;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+}
+
+/* biar tombol atas lebih rapi */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* tombol atas */
+.btn-back {
+    background: #2c3e50;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+}
+/* FIX TABLE KELEBARAN */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    overflow-x: auto; /* biar ga kepotong */
+}
+
+/* TABLE NORMAL & RAPI */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+}
+
+/* TEXT BIAR GA PECAH ANEH */
+.table td, .table th {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* penting */
+}
+
+/* KHUSUS KOLOM PANJANG */
+.table td:nth-child(4) {
+    white-space: normal;
+    max-width: 300px;
+    text-align: left;
+}
+
+/* STATUS BIAR GA NINDIH */
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+/* BIAR TEXT GA NGELEBAR */
+.table td, .table th {
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+}
+
+/* KHUSUS KOLOM KETERANGAN */
+.table td:nth-child(4) {
+    text-align: left;
+    max-width: 250px;
+}
+
+/* BIAR STATUS & FEEDBACK RAPI */
+.badge {
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* BIAR BUTTON GA KEGESER */
+.btn-edit {
+    display: inline-block;
+}
+
+
+/* FIX NAVBAR */
+body {
+    margin: 0;
+    padding-top: 70px; /* kasih jarak biar ga ketutup */
+}
+
+/* kalau ada navbar/header */
+.navbar, header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
